@@ -35,7 +35,7 @@ a {
 }
 
 a:focus, a:hover {
-  color: #0085A1;
+  color: #B73900;
 }
 
 blockquote {
@@ -62,13 +62,13 @@ blockquote {
 
 ::-moz-selection {
   color: #fff;
-  background: #0085A1;
+  background: #B73900;
   text-shadow: none;
 }
 
 ::selection {
   color: #fff;
-  background: #0085A1;
+  background: #B73900;
   text-shadow: none;
 }
 
@@ -114,6 +114,20 @@ img::-moz-selection {
   text-transform: uppercase;
 }
 
+#mainNav.is-fixed .navbar-nav > li.nav-item > a.nav-link.active {
+  color: #B73900;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: inherit;
+}
+
+section:before { content: ''; display: block; position: relative; width: 0; height: 1px; margin-top: -1px;
+}
+
+
 @media only screen and (min-width: 992px) {
   #mainNav {
     border-bottom: 1px solid transparent;
@@ -155,17 +169,23 @@ img::-moz-selection {
     color: #212529;
   }
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
-    color: #0085A1;
+    color: #B73900;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a {
     color: #212529;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-    color: #0085A1;
+    /*color: #B73900;*/
+  }
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
+    color: #B73900;
   }
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */
     transform: translate3d(0, 100%, 0);
+  }
+  #mainNav.is-fixed .nav-title {
+    color:#b73900;
   }
 }
 
@@ -184,14 +204,14 @@ header.masthead .overlay {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #212529;
-  opacity: 0.5;
+  background-color: #000000;/*#212529;*/
+  opacity: 0.7;/*0.5;*/
 }
 
 header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
-  padding: 200px 0 150px;
+  padding: 150px 0 150px;
   color: white;
 }
 
@@ -199,7 +219,7 @@ header.masthead .site-heading {
   header.masthead .page-heading,
   header.masthead .post-heading,
   header.masthead .site-heading {
-    padding: 200px 0;
+    padding: 150px 0;
   }
 }
 
@@ -274,7 +294,7 @@ header.masthead .post-heading .meta a {
 
 .post-preview > a:focus, .post-preview > a:hover {
   text-decoration: none;
-  color: #0085A1;
+  color: #B73900;
 }
 
 .post-preview > a > .post-title {
@@ -302,7 +322,7 @@ header.masthead .post-heading .meta a {
 
 .post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
   text-decoration: underline;
-  color: #0085A1;
+  color: #B73900;
 }
 
 @media only screen and (min-width: 768px) {
@@ -361,7 +381,7 @@ header.masthead .post-heading .meta a {
 }
 
 .floating-label-form-group-with-focus label {
-  color: #0085A1;
+  color: #B73900;
 }
 
 form .form-group:first-child .floating-label-form-group {
@@ -394,8 +414,8 @@ footer .copyright {
 }
 
 .btn-primary {
-  background-color: #0085A1;
-  border-color: #0085A1;
+  background-color: #B73900;
+  border-color: #B73900;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
@@ -407,4 +427,12 @@ footer .copyright {
 .btn-lg {
   font-size: 16px;
   padding: 25px 35px;
+}
+
+hr.small {
+  max-width: 100px;
+  /*margin: 15px auto;*/
+  margin: 0;
+  border-width: 4px;
+  border-color: white;
 }
