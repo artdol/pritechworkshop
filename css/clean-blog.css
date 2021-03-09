@@ -436,3 +436,15 @@ hr.small {
   border-width: 4px;
   border-color: white;
 }
+
+p.speaker {
+  margin: 0px;
+  color: #B73900;
+  line-height: 1.2;
+}
+
+p.affiliation {
+  margin: 0px;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
