@@ -451,12 +451,45 @@ hr.small {
 
 .talk-title {
   margin: 0px;
-  margin-bottom: 15px;
   line-height: 1.2;
   color: #3D4351;
 }
 
+.talk-title {
+  margin-bottom: 15px;
+}
+
 .panel-description {
-  /*margin-top: 10px;
-  margin-bottom: 10px;*/
+  /*margin-top: 10px;*/
+  /*margin-bottom: 10px;*/
+}
+
+.abstract {
+  font-style: italic;
+}
+
+
+/* Read more / Read less */
+#module {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+.timeline-content #collapseExample.collapse:not(.show) {
+  display: block;
+  height: 15rem;
+  overflow: hidden;
+}
+
+.timeline-content #collapseExample.collapsing {
+  height: 15rem;
+}
+
+.timeline-content .showmore a.collapsed::after {
+  content: '+ Show More';
+}
+
+.timeline-content .showmore a:not(.collapsed)::after {
+  content: '- Show Less';
 }

@@ -15,13 +15,13 @@ body {
   font-size: 20px;
 }
 
-a {
+/*a {
   color: #FF6B6B;
 }
 a:hover {
   color: #ff9a9a;
   text-decoration: none;
-}
+}*/
 
 .example-header {
   background: #3D4351;
