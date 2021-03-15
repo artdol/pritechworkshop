@@ -437,14 +437,26 @@ hr.small {
   border-color: white;
 }
 
-p.speaker {
+.speaker {
   margin: 0px;
   color: #B73900;
   line-height: 1.2;
 }
 
-p.affiliation {
+.affiliation {
   margin: 0px;
   margin-bottom: 5px;
   line-height: 1.2;
+}
+
+.talk-title {
+  margin: 0px;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  color: #3D4351;
+}
+
+.panel-description {
+  /*margin-top: 10px;
+  margin-bottom: 10px;*/
 }
