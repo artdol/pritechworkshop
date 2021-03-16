@@ -19,10 +19,7 @@
     if ($(window).width() > MQL) {
       var headerHeight = $('#mainNav').height();
       var currentTop = $(window).scrollTop();
-      console.log(currentTop)
-      console.log("yup")
       if (currentTop > headerHeight) {
-        console.log("yup")
         $('#mainNav').addClass('is-visible');
         $('#mainNav').addClass('is-fixed');
       }
